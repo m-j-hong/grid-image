@@ -276,7 +276,7 @@ function redrawOrGradual() {
 }
 
 function fitToScreenDims(w, h) {
-  const targetH = window.innerHeight - 120; // adjust padding
+  const targetH = window.innerHeight - 20; // adjust padding
   const scale = targetH / h;
   return {
     w: Math.round(w * scale),
