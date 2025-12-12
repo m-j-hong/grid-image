@@ -15,10 +15,10 @@ let usingCam = true;
 let streaming = false;
 
 // ---- event wiring ----
-fileInput.addEventListener("change", handleImage);
+fileInput.addEventListener("change", handleImage, console.log('camera mode activated'));
 gridSlider.addEventListener("input", () => usingCam ? null : (img && renderImage()));
 
-camModeBtn.addEventListener("click", startCamMode);
+camModeBtn.addEventListener("click", startCamMode, console.log('camera mode activated'));
 fileModeBtn.addEventListener("click", startFileMode);
 
 // default = camera mode
